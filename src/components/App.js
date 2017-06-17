@@ -28,6 +28,7 @@ export class App extends Component {
           : <User
               image={this.state.user.avatar_url}
               name={this.state.user.name}
+              login={this.state.user.login}
             />}
 
       </div>
