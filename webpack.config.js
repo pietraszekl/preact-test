@@ -12,11 +12,17 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?/i,
+        test: /\.(js)$/,
+        exclude: "/node_modules/",
         loader: "babel-loader",
         options: {
-          presets: ["env"],
-          plugins: [["transform-react-jsx", { pragma: "h" }]]
+          presets: ["react", "es2015", "stage-0"],
+          plugins: [
+            [
+              "transform-react-jsx",
+              { pragma: "h" }
+            ]
+          ]
         }
       }
     ]

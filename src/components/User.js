@@ -13,25 +13,6 @@ export function User(props) {
           <div class="content">
             <p>{props.name} <small>@{props.login}</small></p>
           </div>
-          <nav class="level is-mobile">
-            <div class="level-left">
-              <a class="level-item">
-                <span class="icon is-small">
-                  <span class="fa fa-reply" />
-                </span>
-              </a>
-              <a class="level-item">
-                <span class="icon is-small">
-                  <span class="fa fa-retweet" />
-                </span>
-              </a>
-              <a class="level-item">
-                <span class="icon is-small">
-                  <span class="fa fa-heart" />
-                </span>
-              </a>
-            </div>
-          </nav>
         </div>
       </div>
     </div>
